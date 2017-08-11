@@ -21,7 +21,9 @@ go build
 ./k8s-crd-poc -kubeconf ~/.kube/config
 
 found 1 Shipment Environments
-add: my-shipment-env :: dev, replicas = 2
+add: my-shipment::dev, status =
+created deployment "my-shipment-dev".
+created service "my-shipment-dev".
 ```
 ```
 kubectl get shipmentenvironments -o json | jq '.items[] | .status'
