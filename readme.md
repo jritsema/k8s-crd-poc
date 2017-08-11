@@ -15,11 +15,18 @@ kubectl get shipmentenvironments
 kubectl get shipmentenvironments -o json | jq
 ```
 
-start the controller
+start the controller (locally)
 ```
 go build
 ./k8s-crd-poc -kubeconf ~/.kube/config
+```
 
+or, via deployment
+```
+kubectl create -f operator.yml
+```
+
+```
 found 1 Shipment Environments
 add: my-shipment::dev, status =
 created deployment "my-shipment-dev".

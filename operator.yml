@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: shipment-operator
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        name: shipment-operator
+    spec:
+      containers:
+      - name: shipment-operator
+        image: jritsema/k8s-crd-poc:0.1.0
