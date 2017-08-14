@@ -33,5 +33,5 @@ created deployment "my-shipment-dev".
 created service "my-shipment-dev".
 ```
 ```
-kubectl get shipmentenvironments -o json | jq '.items[] | .status'
+kubectl get shipmentenvironments -o json | jq '.items[] | { shipment: .spec.name, env: .spec.environment, status: .status} '
 ```
