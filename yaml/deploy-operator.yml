@@ -26,4 +26,4 @@ spec:
     spec:
       containers:
       - name: shipment-operator
-        image: jritsema/k8s-crd-poc:0.1.0
+        image: jritsema/k8s-crd-poc:0.1.2
