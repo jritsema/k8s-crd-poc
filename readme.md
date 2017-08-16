@@ -10,7 +10,7 @@ kubectl create -f crd-shipmentenvironments.yml
 
 create an instance of the CRD
 ```
-kubectl create -f my-shipment-env.yml
+kubectl create -f yaml/my-shipment-env.yml
 kubectl get shipmentenvironments
 kubectl get shipmentenvironments -o json | jq
 ```
@@ -23,7 +23,7 @@ go build
 
 or, via deployment
 ```
-kubectl create -f operator.yml
+kubectl create -f yaml/operator.yml
 ```
 
 ```

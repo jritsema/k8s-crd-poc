@@ -2,5 +2,5 @@ version: "2"
 services:
   k8s-crd-poc:
     build: .
-    image: jritsema/k8s-crd-poc:0.1.0
+    image: jritsema/k8s-crd-poc:0.1.2
     

@@ -12,6 +12,15 @@ spec:
   customer: turner
   team: cloudarch
   contact-email: cloudarch
+  loadbalancer:
+    kind: ELB
+  # loadbalancer: #-> ingress via alb ingress controller
+  #   - kind: ALB 
+  #   - type: shared/dedicated
+  #   - dns: myapp.com/foo
+  # loadbalancer: #-> serviceType = LoadBalancer
+  #   - kind: backplane
+  #   - token: xyz
   containers:
     - name: web
       image: gcr.io/google_containers/echoserver:1.4
